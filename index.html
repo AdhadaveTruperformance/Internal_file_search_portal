@@ -32,23 +32,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    .center-text
     {
         font-family: "Poppins", sans-serif;
-        /* margin-bottom: 60px;  */
         text-align: center;
         margin-top: 80px;
         display: block;
         font-size: 1.5em;
         font-weight: bold;
+        margin-bottom: 40px;
     }
     .second-text
     {
         font-family: "Poppins", sans-serif;
-        /* margin-bottom: 60px;  */
         text-align: center;
-        margin-top: 100px;
         display: block;
         font-size: 1.5em;
         font-weight: bold;
         padding-bottom: 20px;
+        margin-top: 40px;
     }
     .text-center-text
     {
@@ -180,6 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         border-radius: 5px;
         transition: ease-in-out .3s;
         border: none;
+        width: 100%;
     }
     .path-info
     {
@@ -234,32 +234,77 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {
         padding-top:20px ;
     }
-
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
     .container-fluid .justify-content-center {
         gap: 20px;
      } 
     }
 
     @media (max-width: 576px) {
-  .submit-btn {
-    width: 50%; 
-    font-size: 16px; 
-    padding: 10px; 
-     }
+    .submit-btn {
+        width: 50%; 
+        font-size: 16px; 
+        padding: 10px; 
+        }
      .centerd-coloum
-    {
-    text-align: center;
+        {
+        text-align: center;
+        }
     }
-    }
+    .quick-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            /* gap: 20px; */
+        }
+        .quick-link {
+            width: 100%;
+            max-width: 120px;
+            aspect-ratio: 2 / 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0; 
+        }
+        .quick-link img {
+            width: 200px;
+            height: 68px; 
+            object-fit: contain;
+            margin-bottom: 60px;
+        }
+        @media (min-width: 576px) {
+            .quick-links {
+                grid-template-columns: repeat(2, 1fr);
+             }
+        }
+        @media (min-width: 768px) {
+            .quick-links {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            .quick-links {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px) {    
+            .new-class {
+                max-width: 100% !important;
+                flex: 0 0 1000%;
+            }
+        }
 
-    @media (max-width: 768px) {
-    .communication-tools {
-       
-     }
-    }
-
-
+        @media screen and (max-width: 500px) {    
+            .quick-link img {
+            width: 120px;
+            height: 60px; 
+            
+            margin-bottom: 60px;
+        }
+        }
+    
 </style>
 </head>
 <body>
@@ -268,150 +313,133 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <img src="./assets/images/trulogo-2.png">
             <h1>Tru Portal</h1>
         </header>
-            </script>
-        <div class="container-fluid">   
+    <div class="container-fluid">
         <h2 class="center-text">Quick Links</h2>
-        <div class="row justify-content-center">
-
-            <div class="col-md-2-sm-4 col-auto communication-tools">
-                <div class="cta-div-first" style="border: 0;">
-                    
-                    <a href="https://slack.com" target="_blank" class="cta-text-img" id="openSlack"><img src="assets/images/Slack.png" alt="" style="width: 120px; height: auto;"></a>
-                    <!-- Communicate and collaborate with your team in real-time through instant messaging and organized channels. 💬  -->
-                </div>
-            </div>
-
-            <div class="col-md-2-sm-4 col-auto communication-tools">
-                <div class="cta-div-first" style="border: 0;">
-                    <a href="https://monday.com/" target="_blank" class="cta-text-img" id="openMondayBoard"><img src="assets/images/Monday.com.png" alt="" style="width: 120px; height: auto;"></a>
-                    <!-- Collaborate with your team, organize projects, and access categorized folders. A great tool for staying on top of tasks! 📂 -->
-                </div>
-            </div>
-
-            <div class="col-md-2-sm-4 col-auto communication-tools">
-                <div class="cta-div-first" style="border: 0;">
-                    <a href="https://outlook.office.com/" class="cta-text-img" target="_blank" id="microsoftOutLook"><img src="assets/images/Outlook (1).png" alt="" style="width: 120px; height: auto;"></a>
-                    <!-- Manage your emails, schedule important meetings, and stay organized with Microsoft's reliable email service. 📧 -->
-
-                </div>
-            </div>
-
-
-            <div class="col-md-2-sm-4 col-auto communication-tools">
-                <div class="cta-div-first"  style="border: 0;">
-                    <a href="https://tp-devserver.com/tru-lms-ldash/" target="_blank" class="cta-text-img" id="truLMS"><img src="assets/images/Tru Performance.png" alt="TRU LMS" style="width: 180px; height: auto;"></a>
-                    <!-- Boost your skills and shine together at our learning hub! 📕 -->
-                </div>
-            </div>
-            <div class="col-md-2-sm-4 col-auto communication-tools" >
-                <div class="cta-div-first" style="border: 0;">
-                    <a href="https://apps.paybooks.in/" class="cta-text-img" target="_blank" id="payBook"><img src="assets/images/Paybooks.png" alt="" style="width: 120px; height: auto;"></a>
-                    <!-- Check your pay and leaves and applications hassle-free right here! 💰 -->
-                </div>
-            </div>
-            <div class="col-md-2-sm-4 col-auto communication-tools">
-                <div class="cta-div-first" style="border: 0;">
-                    <a href="https://chat.openai.com/" target="_blank" class="cta-text-img" id="chatGPT"><img src="assets/images/ChatGPT (1).png" alt="CHATGPT" style="width: 120px; height: auto;"></a>
-                    <!-- Get AI-powered assistance for your questions, projects, and research with ChatGPT. 🤖 -->
-                </div>
-            </div>
-            <div class="col-md-2-sm-4 col-auto communication-tools">
-                <div class="cta-div-first" style="border: 0;">
-                    <a href="https://www.perplexity.ai/" target="_blank" class="cta-text-img" id="perplexity"><img src="assets/images/Perplexity (1).png" alt="" style="width: 120px; height: auto;"></a>
-                    <!-- Get AI-powered assistance for your questions, projects, and research with ChatGPT. 🤖 -->
-                </div>
-            </div>
+        <div class="quick-links">
+            <a href="https://slack.com" target="_blank" class="quick-link" id="openSlack">
+                <img src="assets/images/Slack.png" alt="Slack">
+            </a>
+            <a href="https://monday.com/" target="_blank" class="quick-link" id="openMondayBoard">
+                <img src="assets/images/Monday.com.png" alt="Monday.com">
+            </a>
+            <a href="https://outlook.office.com/" target="_blank" class="quick-link" id="microsoftOutLook">
+                <img src="assets/images/Outlook (1).png" alt="Outlook">
+            </a>
+            <a href="https://academy.truperformancedigital.com/" target="_blank" class="quick-link" id="truLMS">
+                <img src="assets/images/Tru Performance.png" alt="TRU LMS">
+            </a>
+            <a href="https://apps.paybooks.in/" target="_blank" class="quick-link" id="payBook">
+                <img src="assets/images/Paybooks.png" alt="Paybooks">
+            </a>
+            <a href="https://chat.openai.com/" target="_blank" class="quick-link" id="chatGPT">
+                <img src="assets/images/ChatGPT (1).png" alt="ChatGPT">
+            </a>
+            <a href="https://www.perplexity.ai/" target="_blank" class="quick-link" id="Perplexity">
+                <img src="assets/images/Perplexity (1).png" alt="ChatGPT">
+            </a>
         </div>
+    </div>
 
-        <div class="container-fluid"> 
+    <div class="container-fluid"> 
         <h2 class="second-text">Access Your Files</h2>
         <div class="row justify-content-center">
-            <div class="col-md-3">
+            <div class="col-md-3  new-class">
             <div class="cta-div">
                 <a href="https://truperformanceus.sharepoint.com/sites/TruPerformanceDataRepository/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FTruPerformanceDataRepository%2FShared%20Documents%2FTru%20Performance%20Clients&p=true&ga=1" class="cta-button" target="_blank">Client Name</a>
                 Explore folders to place FINAL versions of assets delivered and reference materials received from the client.
             </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6  new-class">
             <div class="cta-div">
                 <a href="https://truperformanceus.sharepoint.com/:f:/s/TruPerformanceDataRepository/EqXycO4kQllHuNxVT-4XoCwB0g54-rrEroRug7kdcJ1jFQ?e=chPhrT" target="_blank" class="cta-button">By Functions</a>
                 Team folders created for easy access to individual work projects. Find folders categorized by Team individuals and common folders for the team where materials are arranged for common use.
             </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3  new-class">
             <div class="cta-div">
                 <a href="https://truperformanceus.sharepoint.com/:f:/s/TruPerformanceDataRepository/Ei08c39xZwVBiAvAfNXIKSsBzIuvZLv-StEoIJQojI8ezg?e=VBqO5C" target="_blank" class="cta-button">SOP'S</a>
                 Find everything you need to navigate work in the Tru Performance style. Slack, Monday.com, Email, and more.
             </div>
             </div>
         </div>
-        </div>
+    </div>
 
-
-        <div class="container-fluid"> 
+    <div class="container-fluid"> 
         <h2 class="text-center-text">File Name Generator</h2>
-        <p class="text-center-para">Here is our singular system of naming all files <br>at Tru.Use this tool to generate a file name for everything you work on.</p>
-
+        <p class="text-center-para">Here is our singular system of naming all files at Tru.<br> Use this tool to generate a file name for everything you work on.</p>
         <form id="pathForm">
-            <div class="row row-span" >
-                <div class="col-md-3 mb-3">
-                    <input type="text" id="baseURL" name="baseURL" class="form-control" placeholder="Enter Client Name" required>
+            <div class="row mb-3" style="padding-left: 10px;padding-right: 10px;">
+                <div class="col-12 col-md-10">
+                    <div class="row">
+                        <div class="col-12 col-md-3 mb-3">
+                            <input type="text" id="baseURL" name="baseURL" class="form-control" placeholder="Enter Client Name" required>
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <input type="text" id="path" name="path" class="form-control" placeholder="Enter Project" required>
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <input type="text" id="parameter1" name="parameter1" class="form-control" placeholder="Enter Task Name">
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <input type="text" id="fileversion" name="fileversion" class="form-control" placeholder="File Version">
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-md-2 mb-3">
-                    <input type="text" id="path" name="path" class="form-control" placeholder="Enter Project" required>
+                <div class="col-12 col-md-2">
+                    <button type="submit" class="submit-btn  w-100">Generate Path</button>
                 </div>
-
-                <div class="col-md-3 mb-3">
-                    <input type="text" id="parameter1" name="parameter1" class="form-control" placeholder="Enter Task Name">
-                </div>
-
-                <div class="col-md-2 mb-3">
-                    <input type="text" id="fileversion" name="fileversion" class="form-control" placeholder="File Version">
-                </div>
-
-                <div class="col-md-2 mb-3 centerd-coloum">
-                    <button type="submit" class="submit-btn">Generate Path</button>
-                </div>
-                </div>
-
+            </div>
         </form>
-
         <div class="path-info text-center mt-4">
             <div id="output" class="mb-3"></div>
-            <button id="copyButton" class="btn">Copy Path</button>
+            <button id="copyButton" class="btn btn-secondary">Copy Path</button>
         </div>
-
     </div>
-<script>
-    document.getElementById('openSlack').addEventListener('click', function() {
-        openApp('https://slack.com/');
-    });
-
-    document.getElementById('openMondayBoard').addEventListener('click', function() {
-        openApp('https://monday.com/');
-    });
-
-    document.getElementById('microsoftOutLook').addEventListener('click', function() {
-        openApp('https://outlook.office.com/');
-    });
-
-    document.getElementById('truLMS').addEventListener('click', function() {
-        openApp('truLMS://open');
-    });
     
-    document.getElementById('payBook').addEventListener('click', function() {
-        openApp('https://apps.paybooks.in/');
-    });
-
-    document.getElementById('chatGPT').addEventListener('click', function() {
-        openApp('https://chat.openai.com/');
-    });
+    <script>
+        function openApp(appUrl, webUrl) {
+            if (appUrl) {
+                window.location.href = appUrl; // Attempt to open app first
+            } 
+            // Delay the web URL redirect to allow app opening (if it exists)
+            else
+            {
+                setTimeout(() => {
+                window.location.href = webUrl;
+            }, 1000); // Delay for 1 second (adjust as necessary)
+            }
+           
+        }
     
-    document.getElementById('perplexity').addEventListener('click', function() {
-        openApp('https://www.perplexity.ai/');
-    });
-</script>
+        document.getElementById('openSlack').addEventListener('click', function() {
+            openApp('slack://open', 'https://slack.com/');
+        });
+    
+        // document.getElementById('openMondayBoard').addEventListener('click', function() {
+        //     openApp('monday://open', 'https://monday.com/');
+        // });
+    
+        document.getElementById('microsoftOutLook').addEventListener('click', function() {
+            openApp('ms-outlook://', 'https://outlook.office.com/');
+        });
+    
+        // document.getElementById('truLMS').addEventListener('click', function() {
+        //     openApp('truLMS://open', 'https://academy.truperformancedigital.com/');
+        // });
+    
+        // document.getElementById('payBook').addEventListener('click', function() {
+        //     openApp('paybooks://open', 'https://apps.paybooks.in/');
+        // });
+    
+        // document.getElementById('chatGPT').addEventListener('click', function() {
+        //     openApp('chatGPT://open', 'https://chat.openai.com/');
+        // });
+    
+        // document.getElementById('Perplexity').addEventListener('click', function() {
+        //     openApp('perplexity://open', 'https://www.perplexity.ai/');
+        // });
+    </script>
+    
 
 
 <script>
@@ -457,11 +485,6 @@ document.getElementById("copyButton").addEventListener("click", function() {
     });
 });
 </script>
-
-       
-        
-
-        
 
 </body>
 </html>
